@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="input-group">
+                <label for="name-box">Full Name</label>
+                <input type="text" id="name-box" placeholder="Enter Your Name" onkeyup="namevalid()">
+                <span id="name-valid"></span>
+            </div>
+            <div class="input-group">
+                <label for="phone-box">Phone No</label>
+                <input type="number" id="phone-box" placeholder="0312-4578910" onkeyup="phonevalid()">
+                <span id="phone-valid"></span>
+            </div>
+            <div class="input-group">
+                <label for="email-box">Email</label>
+                <input type="email" id="email-box" placeholder="Enter Email" onkeyup="mailvalid()">
+                <span id="mail-valid"></span>
+            </div>
+            <div class="input-group">
+                <label for="message-box">Message</label>
+                <textarea rows="4" id="message-box" placeholder="Write your message" onkeyup="textvalid()"></textarea>
+                <span id="message-valid"></span>
+            </div>
+
+
+            <button onclick="return checksummit()">Submit</button>
+            <span id="submit-valid"></span>
+  
+
+        </form>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
